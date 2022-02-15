@@ -4,7 +4,8 @@ function Income() {
 
     return (
         <div className='income'>
-            <p>Income</p>
+        <input type="text"  placeholder="Income" id="income"></input>
+        <br/>
         </div>
     );
 }
