@@ -6,8 +6,6 @@ const expensesSchema = new Schema({
 		amount: {type: Number},
   category: {type: String},
   frequency: {type: Number},
-		}, {
-		timestamps: true
 });
 
 module.exports = mongoose.model('Expenses', expensesSchema);
