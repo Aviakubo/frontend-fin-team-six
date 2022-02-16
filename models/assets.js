@@ -3,9 +3,7 @@ const Schema = mongoose.Schema;
 
 const assetsSchema = new Schema({
 		name: {type: String, required: true},
-		rating: {type: Number},
-		}, {
-		timestamps: true
+		value: {type: Number},
 });
 
-module.exports = mongoose.model('Assets', assetSchema);
+module.exports = mongoose.model('Assets', assetsSchema);
