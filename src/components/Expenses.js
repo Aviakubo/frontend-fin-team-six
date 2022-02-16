@@ -23,6 +23,7 @@ function Expenses() {
     let handleSubmit = (event) => {
         event.preventDefault();
         alert('working'+ JSON.stringify(formValues))
+        // alert('working'+ formValues)
         // alert(formValues)
 
     }
@@ -52,41 +53,3 @@ function Expenses() {
 }
 
 export default Expenses;
-
-
-
-
-// import $ from 'jquery'
-
-// function Expenses() {
-//     let $input;
-// //create button 
-// const addExpBtn = document.getElementById('expenses');
-
-// $(addExpBtn).on('click', function() {
-//     //button grabs input from user
-//     let $input = $('#input-exp').val();   
-//     //post user input to li element & update exps list
-//     $('ul').append(`<li> <button class='x'>X</button>  ${$input} </li>`);
-//     //clear input field
-//     $('#input-exp').val('')
-//     //remove exp from list
-//     $('.x').on('click', function(evt) {
-//         $(this).closest('li').remove();
-//     });
-// })
-//     return (
-//         <div className='expenses'>
-//             <input type="text"  
-//                 placeholder="Expenses" 
-//                 id="expenses">
-//             </input>
-//             <br />
-//             <button>Add Expense</button>
-            
-//         <br/>
-//         </div>
-//     );
-// }
-
-// export default Expenses;
