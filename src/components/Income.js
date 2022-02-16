@@ -2,6 +2,10 @@ import { useState } from "react";
 
 function Income() {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4695724dbdcc6ffeef744d01bbc5083a6f33f03b
     const [formValues, setFormValues] = useState([{ name: 0}])
 
     let handleChange = (i, e) => {
