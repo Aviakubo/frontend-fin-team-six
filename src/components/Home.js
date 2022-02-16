@@ -2,6 +2,7 @@ import Income from './Income';
 import Expenses from './Expenses';
 import Assets from './Assets';
 import Debt from './Debt';
+import Donut from './Donut';
 
 function Home() {
     return (
@@ -11,6 +12,7 @@ function Home() {
             <Expenses />
             <Assets />
             <Debt />
+            <Donut />
             <button>Submit</button>
         </div>
     );
