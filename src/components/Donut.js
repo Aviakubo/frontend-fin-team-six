@@ -2,10 +2,10 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 
 const data = [
-  { name: "Expenses", value: 400, fill: "red" },
-  { name: "Income", value: 300, fill: "green"},
-  { name: "Asset", value: 200, fill: "green" },
-  { name: "Debt", value: 300, fill: "red"}
+  { name: "Expenses", value: 50, fill: "red" },
+  { name: "Income", value: 25, fill: "green"},
+  { name: "Asset", value: 0, fill: "green" },
+  { name: "Debt", value: 75, fill: "red"}
 ];
 
 const renderActiveShape = (props) => {
