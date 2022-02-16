@@ -1,27 +1,22 @@
-
-
-export default function Breakdown(){
+function Breakdown(){
 
 				// VARIABLES
-				let incomes = [];
-				let expenses = [];
-				let assets = [];
-				let debts = [];
-				let totalAmounts = [incomes, assets, expenses, debts]; // For the entire ring-chart, as nested arrays
-				let netWorth, theBlack, theRed, incomeTtl, assetsTtl, expensesTtl, debtsTtl;
-				let userNetWorth = document.getElementById("userNetWorth");
-				let userMsg = document.getElementById("userMsg");
-				let userAdvice = document.getElementById("userAdvice");
-				let userLink = document.getElementById("userLink");
+				let incomes = []; // all income entries
+				let assets = []; // all asset entries
+				let expenses = []; // all expense entries
+				let debts = []; // all debt entries
+				let totalAmounts = [incomes, assets, expenses, debts]; // Nested array for the entire ring-chart
+				let netWorth, theBlack, theRed, incomeTtl, assetsTtl, expensesTtl, debtsTtl; // Calculated values in functions below
+				let userNetWorth = document.getElementById("userNetWorth"); // Net worth message below donut
+				let userMsg = document.getElementById("userMsg"); // "Red" or "Black" message below donut
+				let userAdvice = document.getElementById("userAdvice"); // Text advice message below donut
+				let userLink = document.getElementById("userLink"); // a-href link for google search below donut
 
-				// COLLATE INCOME/ASSET/EXPENSE/DEBT INPUT VALUES
-
-
-				// TOTAL UP INCOME/ASSET/EXPENSE/DEBT AMOUNTS
+				// COLLATE INCOME/ASSET/EXPENSE/DEBT AMOUNTS
 				// e.g. pass in [incomes] and incomeTtl
-				// and return incomeTtl based on amounts in [incomes]
+				// return incomeTtl based [incomes] amounts
 				function finTotal(arr, ttl){
-								ttl = 0;
+        let ttl = 0;
 								for (let i = 0; i < arr.length; i++) {
 												ttl += arr[i];       
 								}
@@ -29,10 +24,14 @@ export default function Breakdown(){
 				}
 
 				// FIND FRACTIONAL VALUES OF TOTAL AMOUNTS RING AND SUBSECTIONS
-				function finFractions(arr){
-								arr.forEach((a)=>{
-								
-								})
+    // e.g. pass in [income] and incomeTtl found above in finTotal()
+    // return a percentage-based array using those values
+				function finPercents(arr, ttl){
+        let percentArr = [];
+								for (let i = 0; i < arr.length; i++){
+            percentArr.push(arr[i]/ttl);            
+        }
+        return percentArr;
 				}
 
 				// ADD VALUES TOGETHER AND PROVIDE FEEDBACK ON GENERAL FINANCIAL STATE
@@ -64,3 +63,5 @@ export default function Breakdown(){
 				}
 
 }
+
+export default Breakdown;
