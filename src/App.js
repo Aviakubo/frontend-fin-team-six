@@ -18,7 +18,7 @@ export default App;
 
 let netWorth, theBlack, theRed, incomeTtl, assetsTtl, expensesTtl, debtsTtl;
 
-let userNetWorth = document.getElementById("userNetWorth).innerText;
+let userNetWorth = document.getElementById("userNetWorth").innerText;
 let userMsg = document.getElementById("userMsg").innerText;
 let userAdvice = document.getElementById("userAdvice").innerText;
 let userLMGTFY = document.getElementById("userLMGTFY").innerText;
