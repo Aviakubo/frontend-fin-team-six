@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Expenses() {
 
-    const [formValues, setFormValues] = useState([{ name: ""}])
+    const [formValues, setFormValues] = useState([{ name: 0}])
 
     let handleChange = (i, e) => {
         let newFormValues = [...formValues];
@@ -11,7 +11,7 @@ function Expenses() {
       }
     
     let addFormFields = () => {
-        setFormValues([...formValues, { name: ""}])
+        setFormValues([...formValues, { name: 0}])
       }
     
     let removeFormFields = (i) => {
@@ -22,16 +22,19 @@ function Expenses() {
     
     let handleSubmit = (event) => {
         event.preventDefault();
-        alert(JSON.stringify(formValues));
+        alert('working'+ JSON.stringify(formValues))
+        // alert(formValues)
+
     }
 
     return (
         
         <form  onSubmit={handleSubmit}>
+            Expense
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
-              <label>Expense</label>
-              <input type="text" name="name" value={element.name || ""} onChange={e => handleChange(index, e)} />
+              <label>$</label>
+              <input type="number" name="name" value={element.name} onChange={e => handleChange(index, e)} />
               {
                 index ? 
                   <button type="button"  className="button remove" onClick={() => removeFormFields(index)}>X</button> 
