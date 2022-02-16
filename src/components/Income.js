@@ -46,7 +46,6 @@ function Income() {
           ))}
           <div className="button-section">
               <button className="button add" type="button" onClick={() => addFormFields()}>Add</button>
-              <button className="button submit" type="submit">Submit</button>
           </div>
       </form>
 
