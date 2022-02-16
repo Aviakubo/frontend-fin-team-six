@@ -8,7 +8,7 @@ const data = [
   { name: "Debt", value: 300, fill: "red"}
 ];
 
-const renderActiveShape = (props: any) => {
+const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
   const {
     cx,
