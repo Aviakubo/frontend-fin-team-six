@@ -2,10 +2,10 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector } from "recharts";
 
 const data = [
-  { name: "Expenses", value: 10, fill: "red" },
-  { name: "Income", value: 30, fill: "green"},
-  { name: "Asset", value: 30, fill: "green" },
-  { name: "Debt", value: 70, fill: "red"}
+  { name: "Expenses", value: 10, fill: "#0088FE" },
+  { name: "Income", value: 30, fill: "#00C49F"},
+  { name: "Asset", value: 30, fill: "#FFBB28" },
+  { name: "Debt", value: 70, fill: "#FF8042"}
 ];
 
 const renderActiveShape = (props) => {
@@ -89,7 +89,10 @@ export default function App() {
   );
 
   return (
-    <PieChart width={400} height={400}>
+    <PieChart style={{
+      position: 'relative', left: '50%', top: '50%',
+      transform: 'translate(-50%'
+    }} width={400} height={400}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
