@@ -39,10 +39,10 @@ export default function App({assetAmount, incAmount, expAmount, debtAmount, asse
   }
 
   const data = [
-    { name: "Expenses", value: expTotal(), fill: "#262D68" },
-    { name: "Income", value: incTotal(), fill: "#0F5A3F"},
-    { name: "Asset", value: assetTotal(), fill: "#5D1181" },
-    { name: "Debt", value: debtTotal(), fill: "#A71D31"}
+    { name: "Expenses", value: expTotal(), fill: "#023E8A" },
+    { name: "Income", value: incTotal(), fill: "#00B4D8"},
+    { name: "Asset", value: assetTotal(), fill: "#023E8A" },
+    { name: "Debt", value: debtTotal(), fill: "#00B4D8"}
   ];
   
   const renderActiveShape = (props) => {

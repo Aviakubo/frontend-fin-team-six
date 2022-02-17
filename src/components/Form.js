@@ -4,6 +4,7 @@ import Debt from './Debt';
 import Income from './Income';
 import Expenses from './Expenses';
 import Donut from './Donut';
+import Breakdown from './Breakdown';
 
 function Form() {
     
@@ -122,6 +123,7 @@ function Form() {
         <Donut assetAmount={assetAmount} incAmount={incAmount} expAmount={expAmount} debtAmount={debtAmount}
         
         assetValues={assetValues} incValues={incValues} expValues={expValues} debtValues={debtValues}/>
+        
         </>
 
     );
