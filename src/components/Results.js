@@ -107,12 +107,6 @@ function Results({assetValues, incValues, expValues, debtValues}){
     return(
         <>
             {finResults()}
-            {/* {userMsg}
-            {userNetWorth}
-            {userAdvice}
-            <Link name="userLink1" to='google.com'>Google</Link>
-            <Link name="userLink2" to='google.com'>Google</Link>
-            <Link name="userLink3" to='google.com'>Google</Link>								 */}
         </>
     )
 
