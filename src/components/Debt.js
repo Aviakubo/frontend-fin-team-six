@@ -1,6 +1,4 @@
-import { useState } from 'react';
-
-function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
+export default function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
     
     return (
         
@@ -23,5 +21,3 @@ function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
       </form>
     );
 }
-
-export default Debt;

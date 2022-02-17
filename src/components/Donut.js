@@ -1,9 +1,7 @@
 import React, { useCallback, useState } from "react";
-import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Sector } from "recharts";
 
 export default function App({assetValues, incValues, expValues, debtValues}) {
-  // console.log({assetAmount})
-  // console.log({assetValues})
 
   let totalAssetAmount = 0;
   let totalIncAmount = 0;
@@ -57,7 +55,6 @@ export default function App({assetValues, incValues, expValues, debtValues}) {
       endAngle,
       fill,
       payload,
-      percent,
       value
     } = props;
     const sin = Math.sin(-RADIAN * midAngle);
@@ -129,13 +126,13 @@ export default function App({assetValues, incValues, expValues, debtValues}) {
     <PieChart style={{
       position: 'relative', left: '50%', top: '50%',
       transform: 'translate(-50%)'
-    }} width={400} height={400}>
+    }} width={600} height={600}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
-        cx={200}
-        cy={200}
+        cx={300}
+        cy={300}
         innerRadius={60}
         outerRadius={80}
         fill="#8884d8"
