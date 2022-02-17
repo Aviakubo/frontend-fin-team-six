@@ -3,22 +3,22 @@ import { useState } from "react";
 function Income({incValues, handleIncChange, removeIncFields, addIncFields}) {
 
     return (
-
-        <form className="formSteps" onSubmit={handleSubmit}>
-            <span className="steps">Step 1 |</span> Income
-          {formValues.map((element, index) => (
+        
+        <form className='formSteps'>
+            Income
+          {incValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
               <input type="number" name="name" value={element.name} onChange={e => handleIncChange(index, e)} />
               {
                 index ? 
-                  <button type="button"  className="remove" onClick={() => removeFormFields(index)}>X</button> 
+                  <button type="button"  className="button remove" onClick={() => removeIncFields(index)}>X</button> 
                 : null
               }
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addFormFields()}>⊕ Add Income</button>
+              <button className="button add" type="button" onClick={() => addIncFields()}>Add</button>
           </div>
       </form>
 
