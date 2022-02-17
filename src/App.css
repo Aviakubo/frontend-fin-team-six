@@ -127,24 +127,23 @@ div.results {
 .final-category {
   background-color: #FFFFFF;
   color: #1E1363;
-  text-align: left;
-  margin-left: 2em;
+  /* text-align: left; */
+  /* margin-left: 2em; */
 }
 
 .advice {
   background-color: #FFFFFF;
-  text-align: left;
-  margin-left: 4em;
+  /* text-align: left; */
+  /* margin-left: 4em; */
 }
 
 .resources {
   background-color: #FFFFFF;
-  text-align: left;
-  margin-left: 6em;
+  /* text-align: left; */
+  /* margin-left: 6em; */
 }
 
-ul {
-  list-style-position: inside;
+a {
   background-color: #FFFFFF;
 }
 
