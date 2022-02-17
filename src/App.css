@@ -116,7 +116,9 @@ svg {
 div.results {
   border-radius: 8px;
   border: 2px #C8E2ED solid;
-  margin: 5em;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 5em;
   background-color: #FFFFFF;
   padding: 5px;
   max-width: 75%;
@@ -124,16 +126,26 @@ div.results {
 
 .final-category {
   background-color: #FFFFFF;
+  color: #1E1363;
+  /* text-align: left; */
+  /* margin-left: 2em; */
 }
 
 .advice {
   background-color: #FFFFFF;
+  /* text-align: left; */
+  /* margin-left: 4em; */
 }
 
 .resources {
   background-color: #FFFFFF;
+  /* text-align: left; */
+  /* margin-left: 6em; */
 }
 
+a {
+  background-color: #FFFFFF;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
