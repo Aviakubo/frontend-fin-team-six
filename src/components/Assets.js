@@ -1,9 +1,5 @@
-import { useState } from 'react';
-
-function Assets({assetValues, handleAssetChange, removeAssetFields, addAssetFields}) {
-  console.log(assetValues)
-    return (
-        
+export default function Assets({assetValues, handleAssetChange, removeAssetFields, addAssetFields}) {
+    return (        
         <form className='formSteps'>
             <span className="steps">Step 1 |</span> Assets
           {assetValues.map((element, index) => (
@@ -21,8 +17,5 @@ function Assets({assetValues, handleAssetChange, removeAssetFields, addAssetFiel
               <button className="button add" type="button" onClick={() => addAssetFields()}>Add</button>
           </div>
       </form>
-
     );
 }
-
-export default Assets;

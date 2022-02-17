@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-function Income({incValues, handleIncChange, removeIncFields, addIncFields}) {
+export default function Income({incValues, handleIncChange, removeIncFields, addIncFields}) {
 
     return (
         
@@ -24,5 +22,3 @@ function Income({incValues, handleIncChange, removeIncFields, addIncFields}) {
 
     );
 }
-
-export default Income;

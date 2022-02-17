@@ -1,8 +1,3 @@
-import Income from './Income';
-import Expenses from './Expenses';
-import Assets from './Assets';
-import Debt from './Debt';
-import Donut from './Donut';
 import Form from './Form';
 import moneyPalLogo from '../images/moneyPalLogo.png'
 

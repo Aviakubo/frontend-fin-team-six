@@ -4,7 +4,6 @@ import Debt from './Debt';
 import Income from './Income';
 import Expenses from './Expenses';
 import Donut from './Donut';
-import Breakdown from './Breakdown';
 import Results from './Results';
 
 function Form() {
@@ -85,8 +84,8 @@ function Form() {
         setDebtValues(newDebtValues)
     }
 
-    let totalAmount = 0;
     let assetAmount = 0; 
+    let totalAmount = 0;
     let incAmount = 0;
     let expAmount = 0;
     let debtAmount = 0;
