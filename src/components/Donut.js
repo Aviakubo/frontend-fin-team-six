@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from "react";
-import { PieChart, Pie, Sector } from "recharts";
+import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
 
 const data = [
-  { name: "Expenses", value: 10, fill: "#0088FE" },
-  { name: "Income", value: 30, fill: "#00C49F"},
-  { name: "Asset", value: 30, fill: "#FFBB28" },
-  { name: "Debt", value: 70, fill: "#FF8042"}
+  { name: "Expenses", value: 10, fill: "#262D68" },
+  { name: "Income", value: 30, fill: "#0F5A3F"},
+  { name: "Asset", value: 30, fill: "#5D1181" },
+  { name: "Debt", value: 70, fill: "#A71D31"}
 ];
 
 const renderActiveShape = (props) => {
@@ -91,7 +91,7 @@ export default function App() {
   return (
     <PieChart style={{
       position: 'relative', left: '50%', top: '50%',
-      transform: 'translate(-50%'
+      transform: 'translate(-50%)'
     }} width={400} height={400}>
       <Pie
         activeIndex={activeIndex}
@@ -99,8 +99,8 @@ export default function App() {
         data={data}
         cx={200}
         cy={200}
-        innerRadius={60}
-        outerRadius={80}
+        innerRadius={110}
+        outerRadius={145}
         fill="#8884d8"
         dataKey="value"
         onMouseEnter={onPieEnter}
