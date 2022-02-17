@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
 
-export default function App({assetAmount, incAmount, expAmount, debtAmount, assetValues, incValues, expValues, debtValues}) {
+export default function App({assetValues, incValues, expValues, debtValues}) {
   // console.log({assetAmount})
-  console.log({assetValues})
+  // console.log({assetValues})
 
   let totalAssetAmount = 0;
   let totalIncAmount = 0;
@@ -39,10 +39,10 @@ export default function App({assetAmount, incAmount, expAmount, debtAmount, asse
   }
 
   const data = [
-    { name: "Expenses", value: expTotal(), fill: "#262D68" },
-    { name: "Income", value: incTotal(), fill: "#0F5A3F"},
-    { name: "Asset", value: assetTotal(), fill: "#5D1181" },
-    { name: "Debt", value: debtTotal(), fill: "#A71D31"}
+    { name: "Expenses", value: expTotal(), fill: "#023E8A" },
+    { name: "Income", value: incTotal(), fill: "#00B4D8"},
+    { name: "Asset", value: assetTotal(), fill: "#023E8A" },
+    { name: "Debt", value: debtTotal(), fill: "#00B4D8"}
   ];
   
   const renderActiveShape = (props) => {
@@ -129,15 +129,15 @@ export default function App({assetAmount, incAmount, expAmount, debtAmount, asse
     <PieChart style={{
       position: 'relative', left: '50%', top: '50%',
       transform: 'translate(-50%)'
-    }} width={500} height={500}>
+    }} width={400} height={400}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
-        cx={250}
-        cy={250}
-        innerRadius={110}
-        outerRadius={145}
+        cx={200}
+        cy={200}
+        innerRadius={60}
+        outerRadius={80}
         fill="#8884d8"
         dataKey="value"
         onMouseEnter={onPieEnter}
