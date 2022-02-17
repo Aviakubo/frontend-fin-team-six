@@ -29,15 +29,16 @@ button.submit {
   background-color: #1E1363;
   color: #F4F7F0;
   width: 20em;
-  height: 3em;
+  height: 3.5em;
   border: none;
   font-weight: bold;
   margin: 2.5em 0 3em 0;
+  font-size: 16px;
 }
 
 button.submit:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
+  background-color: #342A70;
 }
 
 button.add {
@@ -63,9 +64,10 @@ button.remove {
   transform: translate(-10%, 25%);
 }
 
-button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+button.add:hover {
   transition-duration: 0.5s;
+  background-color: #B4CCD6;
+  border: solid 2px;
 }
 
 input {
@@ -101,6 +103,14 @@ input {
 
 label {
   background-color: #FFFFFF;
+}
+
+svg {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 2px #C8E2ED solid;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 /* Chrome, Safari, Edge, Opera */
