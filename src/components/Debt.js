@@ -1,41 +1,41 @@
 import { useState } from 'react';
 
-function Debt() {
-    const [formValues, setFormValues] = useState([{ name: 0}])
+function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
+    // const [debtValues, setDebtValues] = useState([{ name: 0}])
 
-    let handleChange = (i, e) => {
-        let newFormValues = [...formValues];
-        newFormValues[i][e.target.name] = e.target.value;
-        setFormValues(newFormValues);
-      }
+    // let handleDebtChange = (i, e) => {
+    //     let newDebtValues = [...debtValues];
+    //     newDebtValues[i][e.target.name] = e.target.value;
+    //     setDebtValues(newDebtValues);
+    //   }
     
-    let addFormFields = () => {
-        setFormValues([...formValues, { name: 0}])
-      }
+    // let addDebtFields = () => {
+    //     setDebtValues([...debtValues, { name: 0}])
+    //   }
     
-    let removeFormFields = (i) => {
-        let newFormValues = [...formValues];
-        newFormValues.splice(i, 1);
-        setFormValues(newFormValues)
-    }
+    // let removeDebtFields = (i) => {
+    //     let newDebtValues = [...debtValues];
+    //     newDebtValues.splice(i, 1);
+    //     setDebtValues(newDebtValues)
+    // }
     
     return (
         
         <form className='formSteps'>
             Debts
-          {formValues.map((element, index) => (
+          {debtValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
-              <input type="number" name="name" value={element.name} onChange={e => handleChange(index, e)} />
+              <input type="number" name="name" value={element.name} onChange={e => handleDebtChange(index, e)} />
               {
                 index ? 
-                  <button type="button"  className="remove" onClick={() => removeFormFields(index)}>X</button> 
+                  <button type="button"  className="remove" onClick={() => removeDebtFields(index)}>X</button> 
                 : null
               }
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addFormFields()}>⊕ Add Debts</button>
+              <button className="button add" type="button" onClick={() => addDebtFields()}>⊕ Add Debts</button>
           </div>
       </form>
     );

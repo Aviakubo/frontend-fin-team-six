@@ -64,22 +64,40 @@ function Form() {
         setExpValues(newExpValues)
     }
 
+    //Debt info
+    const [debtValues, setDebtValues] = useState([{ name: 0}])
+
+    let handleDebtChange = (i, e) => {
+        let newDebtValues = [...debtValues];
+        newDebtValues[i][e.target.name] = e.target.value;
+        setDebtValues(newDebtValues);
+      }
+    
+    let addDebtFields = () => {
+        setDebtValues([...debtValues, { name: 0}])
+      }
+    
+    let removeDebtFields = (i) => {
+        let newDebtValues = [...debtValues];
+        newDebtValues.splice(i, 1);
+        setDebtValues(newDebtValues)
+    }
 
     let amount = 0;
     let handleSubmit = (event) => {
         event.preventDefault();
         // alert('working')
         for(let i=0; i<assetValues.length; i++){
-          console.log(assetValues[i].name)
         amount += Number(assetValues[i].name)
         }
         for(let i=0; i<incValues.length; i++){
-          console.log(incValues[i].name)
         amount += Number(incValues[i].name)
         }
         for(let i=0; i<expValues.length; i++){
-          console.log(expValues[i].name)
         amount -= Number(expValues[i].name)
+        }
+        for(let i=0; i<debtValues.length; i++){
+        amount -= Number(debtValues[i].name)
         }
 
     alert(amount)
@@ -91,7 +109,7 @@ function Form() {
         <Assets assetValues={assetValues} handleAssetChange={handleAssetChange} removeAssetFields={removeAssetFields} addAssetFields={addAssetFields}/>
         <Income incValues={incValues} handleIncChange={handleIncChange} removeIncFields={removeIncFields} addIncFields={addIncFields}/>
         <Expenses expValues={expValues} handleExpChange={handleExpChange} removeExpFields={removeExpFields} addExpFields={addExpFields}/>
-        <Debt />
+        <Debt debtValues={debtValues} handleDebtChange={handleDebtChange} removeDebtFields={removeDebtFields} addDebtFields={addDebtFields}/>
         <button onClick={handleSubmit}>Submit</button>
         <Donut />
         </>
