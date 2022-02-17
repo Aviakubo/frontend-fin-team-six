@@ -68,7 +68,7 @@ function Form() {
         <Income incValues={incValues} handleIncChange={handleIncChange} removeIncFields={removeIncFields} addIncFields={addIncFields}/>
         <Expenses />
         <Debt />
-        <button onClick={handleSubmit}>Submit</button>
+        <button className="submit"onClick={handleSubmit}>Submit</button>
         <Donut />
         </>
 

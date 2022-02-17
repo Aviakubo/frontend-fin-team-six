@@ -44,7 +44,7 @@ function Expenses() {
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addFormFields()}>⊕ Add Expenses</button>
+              <button className="button add" type="button" onClick={() => addFormFields()}>Add</button>
           </div>
       </form>
 
