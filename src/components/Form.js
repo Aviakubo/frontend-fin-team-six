@@ -83,26 +83,34 @@ function Form() {
         setDebtValues(newDebtValues)
     }
 
-    let amount = 0;
+    let totalAmount = 0;
+    let assetAmount = 0; 
+    let incAmount = 0;
+    let expAmount = 0;
+    let debtAmount = 0;
+
     let handleSubmit = (event) => {
         event.preventDefault();
-        // alert('working')
+
         for(let i=0; i<assetValues.length; i++){
-        amount += Number(assetValues[i].name)
+          totalAmount += Number(assetValues[i].name)
+          assetAmount += Number(assetValues[i].name)
         }
+        console.log(assetAmount)
         for(let i=0; i<incValues.length; i++){
-        amount += Number(incValues[i].name)
+          totalAmount += Number(incValues[i].name)
+          incAmount += Number(incValues[i].name)
         }
         for(let i=0; i<expValues.length; i++){
-        amount -= Number(expValues[i].name)
+          totalAmount -= Number(expValues[i].name)
+          expAmount -= Number(expValues[i].name)
         }
         for(let i=0; i<debtValues.length; i++){
-        amount -= Number(debtValues[i].name)
+          totalAmount -= Number(debtValues[i].name)
+          debtAmount -= Number(debtValues[i].name)
         }
-
-    alert(amount)
+      alert(totalAmount)
     }
-
 
     return (
         <>
@@ -111,7 +119,9 @@ function Form() {
         <Expenses expValues={expValues} handleExpChange={handleExpChange} removeExpFields={removeExpFields} addExpFields={addExpFields}/>
         <Debt debtValues={debtValues} handleDebtChange={handleDebtChange} removeDebtFields={removeDebtFields} addDebtFields={addDebtFields}/>
         <button className='submit' onClick={handleSubmit}>Generate Results</button>
-        <Donut />
+        <Donut assetAmount={assetAmount} incAmount={incAmount} expAmount={expAmount} debtAmount={debtAmount}
+        
+        assetValues={assetValues} incValues={incValues} expValues={expValues} debtValues={debtValues}/>
         </>
 
     );
