@@ -1,5 +1,5 @@
 ## Fin Team Six's App
-# Plan B(udget)
+# MoneyPal
 
 This project was designed and created by Angela Lin, Tina Huang, Yuri, Shin, Ian Cannon, Nellie Bosch, and David Yakubov.
 
@@ -15,8 +15,8 @@ We also value your privacy so we do not ask for *any* personal information such 
 - React.js
 - Figma
 
-## Getting Started with Plan B(udget)
-1. Visit the link to Plan B(udget) here.
+## Getting Started with MoneyPal
+1. Visit the link to MoneyPal here.
 2. Gather the necessary info such as,
     - Income
     - Expenses
