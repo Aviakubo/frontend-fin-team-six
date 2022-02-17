@@ -1,33 +1,6 @@
 import { useState } from "react";
 
-function Income() {
-
-
-    const [formValues, setFormValues] = useState([{ name: 0}])
-
-    let handleChange = (i, e) => {
-        let newFormValues = [...formValues];
-        newFormValues[i][e.target.name] = e.target.value;
-        setFormValues(newFormValues);
-      }
-    
-    let addFormFields = () => {
-        setFormValues([...formValues, { name: 0}])
-      }
-    
-    let removeFormFields = (i) => {
-        let newFormValues = [...formValues];
-        newFormValues.splice(i, 1);
-        setFormValues(newFormValues)
-    }
-    
-    let handleSubmit = (event) => {
-        event.preventDefault();
-        alert('working'+ JSON.stringify(formValues))
-        // alert('working'+ formValues)
-        // alert(formValues)
-
-    }
+function Income({incValues, handleIncChange, removeIncFields, addIncFields}) {
 
     return (
 
@@ -36,7 +9,7 @@ function Income() {
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
-              <input type="number" name="name" value={element.name} onChange={e => handleChange(index, e)} />
+              <input type="number" name="name" value={element.name} onChange={e => handleIncChange(index, e)} />
               {
                 index ? 
                   <button type="button"  className="remove" onClick={() => removeFormFields(index)}>X</button> 
