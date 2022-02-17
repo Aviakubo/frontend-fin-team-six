@@ -52,6 +52,8 @@ button.remove {
   color: #1E1363;
   height: 2.5em;
   width: 2.5em;
+  position: absolute;
+  transform: translate(-10%, 25%);
 }
 
 button:hover {
@@ -73,4 +75,5 @@ input {
   border: 2px #C8E2ED solid;
   padding: 5px;
   margin: 5px 5px 15px 5px;
+  background-color: #FFFFFF;
 }
