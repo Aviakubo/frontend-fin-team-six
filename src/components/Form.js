@@ -110,7 +110,7 @@ function Form() {
         <Income incValues={incValues} handleIncChange={handleIncChange} removeIncFields={removeIncFields} addIncFields={addIncFields}/>
         <Expenses expValues={expValues} handleExpChange={handleExpChange} removeExpFields={removeExpFields} addExpFields={addExpFields}/>
         <Debt debtValues={debtValues} handleDebtChange={handleDebtChange} removeDebtFields={removeDebtFields} addDebtFields={addDebtFields}/>
-        <button onClick={handleSubmit}>Submit</button>
+        <button className='submit' onClick={handleSubmit}>Submit</button>
         <Donut />
         </>
 
