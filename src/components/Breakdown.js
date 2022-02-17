@@ -5,7 +5,7 @@ function Breakdown(){
 				let assets = []; // all asset entries
 				let expenses = []; // all expense entries
 				let debts = []; // all debt entries
-				let totalAmounts = [incomes, assets, expenses, debts]; // Nested array for the entire ring-chart
+				let totalAmounts = [incomes, assets, expenses, debts]; // Use the nested array for the donut chart
 				let netWorth, theBlack, theRed, incomeTtl, assetsTtl, expensesTtl, debtsTtl; // Calculated values in functions below
 				let userNetWorth = document.getElementById("userNetWorth"); // Net worth message below donut
 				let userMsg = document.getElementById("userMsg"); // "Red" or "Black" message below donut
@@ -44,18 +44,18 @@ function Breakdown(){
 												userMsg.innerText = "You're in the black!" 
 												: 
 												userMsg.innerText = "You're in the red!";
-								if (incomeTtl > (assetsTtl && expensesTtl && debtsTtl) || theBlack > theRed) {
-												userAdvice.innerText = "Nice finances; consider putting your funds into long-term assets or properties!";
-												userLink.href = "https://www.google.com/search?q=long+term+and+property+investments";
-								} else if (assetsTtl > (incomeTtl && expensesTtl && debtsTtl)) {
-												userAdvice.innerText = "Impressive high asset value; consider investments to provide a steady income source!";
-												userLink.href = "https://www.google.com/search?q=steady+return+and+growth+investments";
-								} else if (expensesTtl > (incomeTtl && assetsTtl && debtsTtl) || theRed > theBlack) {
-												userAdvice.innerText = "Your expenses are high; are you interested in financial literacy or other ways to handle costs?";
-												userLink.href = "https://www.google.com/search?q=financial+literacy+and+ways+to+improve+earning+potential";
-								} else if (debtsTtl > (incomeTtl && assetsTtl && expensesTtl)) {
-												userAdvice.innerText = "You have some debt issues; do you have any assets you could liquidate or are you in need of debt relief?";
-												userLink.href = "https://www.google.com/search?q=asset+liquidation+and+debt+relief+or+bankruptcy+help";
+								if ((incomeTtl > (assetsTtl && expensesTtl && debtsTtl)) || (theBlack > theRed)) {
+												userAdvice.innerText = "Nice finances; consider the 70-20-10 rule for handling costs and savings, and putting more funds into long-term assets or properties!";
+												userLink.href = "https://www.google.com/search?q=70-20-10+rule+long+term+and+property+investments";
+								} else if ((assetsTtl > (incomeTtl && expensesTtl && debtsTtl)) && (theBlack > theRed)) {
+												userAdvice.innerText = "Impressive savings and assets; consider investments for a steady income source. If you're close to retiring, are you familiar with the 4-percent rule?";
+												userLink.href = "https://www.google.com/search?q=4-percent+rule+steady+return+and+growth+investments";
+								} else if ((expensesTtl > (incomeTtl && assetsTtl && debtsTtl)) || (theRed > theBlack)) {
+												userAdvice.innerText = "Your expenses are high; consider the 50-30-20 rule, and reduce non-essential spending. Are you interested in financial literacy or other ways to handle costs?";
+												userLink.href = "https://www.google.com/search?q=50-30-20+rule+financial+literacy+improving+earning+potential";
+								} else if (debtsTtl > (incomeTtl && assetsTtl && expensesTtl) && (theRed > theBlack)) {
+												userAdvice.innerText = "You have some debt issues; prioritize paying the most significant debts first. Do you have any assets you could liquidate or are you in need of debt relief?";
+												userLink.href = "https://www.google.com/search?q=asset+liquidation+debt+relief+bankruptcy+help";
 								} else { 
 												userAdvice.innerText = "Your finances are perfectly balanced! (Seriously, though, what's with that?)";
 												userLink.href = "http://www.zombo.com";
