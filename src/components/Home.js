@@ -10,7 +10,7 @@ function Home() {
         <div className='home'>
             <p>Home</p>
             <Form />
-            <Donut />
+            {/* <Donut /> */}
         </div>
     );
 }

@@ -1,49 +1,24 @@
 import { useState } from 'react';
 
-function Assets() {
-    const [formValues, setFormValues] = useState([{ name: 0}])
-
-    let handleChange = (i, e) => {
-        let newFormValues = [...formValues];
-        newFormValues[i][e.target.name] = e.target.value;
-        setFormValues(newFormValues);
-      }
-    
-    let addFormFields = () => {
-        setFormValues([...formValues, { name: 0}])
-      }
-    
-    let removeFormFields = (i) => {
-        let newFormValues = [...formValues];
-        newFormValues.splice(i, 1);
-        setFormValues(newFormValues)
-    }
-    
-    let handleSubmit = (event) => {
-        event.preventDefault();
-        alert('working'+ JSON.stringify(formValues))
-        // alert('working'+ formValues)
-        // alert(formValues)
-
-    }
-
+function Assets({assetValues, handleAssetChange, removeAssetFields, addAssetFields}) {
+  console.log(assetValues)
     return (
         
-        <form  onSubmit={handleSubmit}>
+        <form>
             Assets
-          {formValues.map((element, index) => (
+          {assetValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
-              <input type="number" name="name" value={element.name} onChange={e => handleChange(index, e)} />
+              <input type="number" name="name" value={element.name} onChange={e => handleAssetChange(index, e)} />
               {
                 index ? 
-                  <button type="button"  className="button remove" onClick={() => removeFormFields(index)}>X</button> 
+                  <button type="button"  className="button remove" onClick={() => removeAssetFields(index)}>X</button> 
                 : null
               }
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addFormFields()}>Add</button>
+              <button className="button add" type="button" onClick={() => addAssetFields()}>Add</button>
           </div>
       </form>
 
