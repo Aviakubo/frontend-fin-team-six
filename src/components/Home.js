@@ -8,7 +8,8 @@ import Form from './Form';
 function Home() {
     return (
         <div className='home'>
-            <p>Home</p>
+            <h1>Money Pal</h1>
+            <p>Get your budgeting plan and learn more about how you can improve your financial situation!</p>
             <Form />
             <Donut />
         </div>
