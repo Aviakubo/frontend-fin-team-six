@@ -1,23 +1,6 @@
 import { useState } from 'react';
 
 function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
-    // const [debtValues, setDebtValues] = useState([{ name: 0}])
-
-    // let handleDebtChange = (i, e) => {
-    //     let newDebtValues = [...debtValues];
-    //     newDebtValues[i][e.target.name] = e.target.value;
-    //     setDebtValues(newDebtValues);
-    //   }
-    
-    // let addDebtFields = () => {
-    //     setDebtValues([...debtValues, { name: 0}])
-    //   }
-    
-    // let removeDebtFields = (i) => {
-    //     let newDebtValues = [...debtValues];
-    //     newDebtValues.splice(i, 1);
-    //     setDebtValues(newDebtValues)
-    // }
     
     return (
         
