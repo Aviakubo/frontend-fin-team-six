@@ -1,6 +1,6 @@
 * {
   text-align: center; 
-  font-family: 'Zen Kurenaido', sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #F6FBFF;
 }
 
@@ -15,12 +15,13 @@ p {
 
 body {
   font-size: 18px;
-  font-family: 'Zen Kurenaido', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .steps {
   font-weight:bold;
   color:#1E1363;
+  background-color: #FFFFFF;
 }
 
 button.submit {
@@ -31,6 +32,12 @@ button.submit {
   height: 3em;
   border: none;
   font-weight: bold;
+  margin: 2.5em 0 3em 0;
+}
+
+button.submit:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition-duration: 0.5s;
 }
 
 button.add {
@@ -41,7 +48,7 @@ button.add {
   color: #1E1363;
   width: 8em;
   height: 2.5em;
-  margin: 2em;
+  margin: 25px 0px 25px 0px;
 }
 
 button.remove {
@@ -73,16 +80,14 @@ input {
 .formSteps {
   border-radius: 8px;
   border: 2px #C8E2ED solid;
-  padding: 5px;
+  padding: 25px;
   margin: 5px 5px 15px 5px;
   background-color: #FFFFFF;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50%;
 }
 
 .form-inline {
   background-color: #FFFFFF;
+  padding: 25px 0px 0px 0px;
 }
 
 .button-section {
@@ -90,8 +95,12 @@ input {
 }
 
 .logo {
-  max-width: 400px;
+  max-width: 35%;
   margin: 2em;
+}
+
+label {
+  background-color: #FFFFFF;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -104,4 +113,14 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media screen and (min-width: 650px) {
+
+  .formSteps{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+  
 }
