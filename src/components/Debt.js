@@ -30,7 +30,7 @@ function Debt() {
     return (
         
         <form  onSubmit={handleSubmit}>
-            Debts
+            Step 3| Debts
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>

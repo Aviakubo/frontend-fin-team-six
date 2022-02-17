@@ -30,7 +30,7 @@ function Assets() {
     return (
         
         <form  onSubmit={handleSubmit}>
-            Assets
+            Step 4| Assets
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>

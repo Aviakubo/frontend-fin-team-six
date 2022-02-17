@@ -32,7 +32,7 @@ function Income() {
     return (
         
         <form  onSubmit={handleSubmit}>
-            Income
+            Step 1| Income
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>

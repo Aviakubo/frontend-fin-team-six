@@ -14,11 +14,11 @@ function Form() {
 
     return (
         <>
-        <Assets />
         <Income />
         <Expenses />
         <Debt />
-        <button>Submit</button>
+        <Assets />
+        <button className="submit">Submit</button>
         </>
 
     );

@@ -7,6 +7,11 @@
   font-family: 'Zen Kurenaido', sans-serif;
 }
 
+form {
+  background-color: white;
+  margin: 1em;
+}
+
 h1 {
   font-size: 36px;
   font-weight: bold;
@@ -14,6 +19,7 @@ h1 {
 
 body {
   font-size: 18px;
+  font-family: 'Zen Kurenaido', sans-serif;
 }
 
 button.submit {
@@ -40,6 +46,8 @@ button:hover {
 input {
   border-radius: 8px;
   border-width: 1px;
+  width: 45%;
+  height: 2.25em;
 }
 
 .App-logo {
