@@ -113,6 +113,28 @@ svg {
   font-size: 24px;
 }
 
+div.results {
+  border-radius: 8px;
+  border: 2px #C8E2ED solid;
+  margin: 5em;
+  background-color: #FFFFFF;
+  padding: 5px;
+  max-width: 75%;
+}
+
+.final-category {
+  background-color: #FFFFFF;
+}
+
+.advice {
+  background-color: #FFFFFF;
+}
+
+.resources {
+  background-color: #FFFFFF;
+}
+
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
