@@ -52,6 +52,8 @@ button.remove {
   color: #1E1363;
   height: 2.5em;
   width: 2.5em;
+  position: absolute;
+  transform: translate(-10%, 25%);
 }
 
 button:hover {
