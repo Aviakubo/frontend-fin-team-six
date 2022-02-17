@@ -1,42 +1,24 @@
 import { useState } from "react";
 
-function Expenses() {
-
-    const [formValues, setFormValues] = useState([{ name: 0}])
-
-    let handleChange = (i, e) => {
-        let newFormValues = [...formValues];
-        newFormValues[i][e.target.name] = e.target.value;
-        setFormValues(newFormValues);
-      }
-    
-    let addFormFields = () => {
-        setFormValues([...formValues, { name: 0}])
-      }
-    
-    let removeFormFields = (i) => {
-        let newFormValues = [...formValues];
-        newFormValues.splice(i, 1);
-        setFormValues(newFormValues)
-    }
+function Expenses({expValues, handleExpChange, removeExpFields, addExpFields}) {
 
     return (
         
         <form className='formSteps'>
             Expense
-          {formValues.map((element, index) => (
+          {expValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
-              <input type="number" name="name" value={element.name} onChange={e => handleChange(index, e)} />
+              <input type="number" name="name" value={element.name} onChange={e => handleExpChange(index, e)} />
               {
                 index ? 
-                  <button type="button"  className="remove" onClick={() => removeFormFields(index)}>X</button> 
+                  <button type="button"  className="remove" onClick={() => removeExpFields(index)}>X</button> 
                 : null
               }
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addFormFields()}>⊕ Add Expenses</button>
+              <button className="button add" type="button" onClick={() => addExpFields()}>⊕ Add Expenses</button>
           </div>
       </form>
 

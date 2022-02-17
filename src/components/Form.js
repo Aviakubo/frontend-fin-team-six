@@ -45,6 +45,25 @@ function Form() {
         setIncValues(newIncValues)
     }
     
+    //Expense info
+    const [expValues, setExpValues] = useState([{ name: 0}])
+
+    let handleExpChange = (i, e) => {
+        let newExpValues = [...expValues];
+        newExpValues[i][e.target.name] = e.target.value;
+        setExpValues(newExpValues);
+      }
+    
+    let addExpFields = () => {
+        setExpValues([...expValues, { name: 0}])
+      }
+    
+    let removeExpFields = (i) => {
+        let newExpValues = [...expValues];
+        newExpValues.splice(i, 1);
+        setExpValues(newExpValues)
+    }
+
 
     let amount = 0;
     let handleSubmit = (event) => {
@@ -58,6 +77,11 @@ function Form() {
           console.log(incValues[i].name)
         amount += Number(incValues[i].name)
         }
+        for(let i=0; i<expValues.length; i++){
+          console.log(expValues[i].name)
+        amount -= Number(expValues[i].name)
+        }
+
     alert(amount)
     }
 
@@ -66,7 +90,7 @@ function Form() {
         <>
         <Assets assetValues={assetValues} handleAssetChange={handleAssetChange} removeAssetFields={removeAssetFields} addAssetFields={addAssetFields}/>
         <Income incValues={incValues} handleIncChange={handleIncChange} removeIncFields={removeIncFields} addIncFields={addIncFields}/>
-        <Expenses />
+        <Expenses expValues={expValues} handleExpChange={handleExpChange} removeExpFields={removeExpFields} addExpFields={addExpFields}/>
         <Debt />
         <button onClick={handleSubmit}>Submit</button>
         <Donut />
