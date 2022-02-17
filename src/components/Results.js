@@ -84,7 +84,7 @@ function Results({assetValues, incValues, expValues, debtValues}){
                     <a href="https://www.khanacademy.org/college-careers-more/personal-finance/pf-saving-and-budgeting" target="#" >"Personal finance, saving, and budgeting"</a>
                 </div>
             )
-        } else if (debtsTtl < incomeTtl + expensesTtl + assetsTtl){
+        } else if (debtsTtl > incomeTtl + expensesTtl + assetsTtl){
             return (
                 <div className='results'>
                     <h1 className='final-category'>You have outstanding debts</h1>
