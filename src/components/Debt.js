@@ -28,25 +28,24 @@ function Debt() {
     }
 
     return (
-        
-        <form  onSubmit={handleSubmit}>
-            Step 3| Debts
+      
+        <form className="formSteps" onSubmit={handleSubmit}>
+            <span className="steps">Step 3|</span> Debts
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
               <input type="number" name="name" value={element.name} onChange={e => handleChange(index, e)} />
               {
                 index ? 
-                  <button type="button"  className="button remove" onClick={() => removeFormFields(index)}>X</button> 
+                  <button type="button"  className="remove" onClick={() => removeFormFields(index)}>X</button> 
                 : null
               }
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addFormFields()}>Add</button>
+              <button className="button add" type="button" onClick={() => addFormFields()}>⊕ Add Debts</button>
           </div>
       </form>
-
     );
 }
 

@@ -18,7 +18,7 @@ function Form() {
         <Expenses />
         <Debt />
         <Assets />
-        <button className="submit">Submit</button>
+        <button className="submit">Generate Results</button>
         </>
 
     );
