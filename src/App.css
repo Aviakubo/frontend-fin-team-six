@@ -103,6 +103,14 @@ label {
   background-color: #FFFFFF;
 }
 
+svg {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 2px #C8E2ED solid;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

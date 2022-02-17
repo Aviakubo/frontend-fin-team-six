@@ -129,15 +129,15 @@ export default function App({assetAmount, incAmount, expAmount, debtAmount, asse
     <PieChart style={{
       position: 'relative', left: '50%', top: '50%',
       transform: 'translate(-50%)'
-    }} width={500} height={500}>
+    }} width={400} height={400}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
-        cx={250}
-        cy={250}
-        innerRadius={110}
-        outerRadius={145}
+        cx={200}
+        cy={200}
+        innerRadius={60}
+        outerRadius={80}
         fill="#8884d8"
         dataKey="value"
         onMouseEnter={onPieEnter}
