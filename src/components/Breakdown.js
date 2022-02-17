@@ -78,31 +78,31 @@ export default function Breakdown({Form}){
 										</>
 						);
 														} 
-									// 					else if ((expensesTtl > (incomeTtl && assetsTtl && debtsTtl)) || (theRed > theBlack)) {
-									// 									setUserAdvice = "Your expenses are high; consider the 50-30-20 rule, and reduce non-essential spending. Are you interested in financial literacy or other ways to handle costs?";
-									// 									setUserLink1 = "https://www.clevergirlfinance.com/blog/ways-to-stop-buying-crap-you-dont-need/";
-									// 									setUserLink2 = "https://www.khanacademy.org/college-careers-more/personal-finance/pf-saving-and-budgeting/tips-for-tracking-and-saving-money/v/ways-to-save-money-on-your-monthly-bills";
-									// 									setUserLink3 = "https://www.khanacademy.org/college-careers-more/personal-finance/pf-saving-and-budgeting";
-									// setUserText1 = "Ways to avoid unneeded purchases";
-									// setUserText2 = "Reducing your monthly bills";
-									// setUserText3 = "Personal finance, saving, and budgeting";
-									// 					} else if (debtsTtl > (incomeTtl && assetsTtl && expensesTtl) && (theRed > theBlack)) {
-									// 									setUserAdvice = "You have some debt issues; prioritize paying the most significant debts first. Do you have any assets you could liquidate or are you in need of debt relief?";
-									// 									setUserLink1 = "https://www.aarp.org/money/credit-loans-debt/info-08-2011/negotiating-credit-card-companies.html";
-									// 									setUserLink2 = "https://consumer.westchestergov.com/financial-education/credit-and-debt-management/tips-to-reduce-your-debt";
-									// 									setUserLink3 = "https://www.investopedia.com/personal-finance/digging-out-of-debt/";
-									// setUserText1 = "How to negotiate with credit companies";
-									// setUserText2 = "Tips on reducing what you owe";
-									// setUserText3 = "Dig your way out of debts";
-									// 					} else { 
-									// 									setUserAdvice = "Your finances are perfectly balanced! (Seriously, though, what's with that?)";
-									// 									setUserLink1 = "https://www.investopedia.com/articles/personal-finance/040715/what-microlending-and-how-does-it-work.asp";
-									// 									setUserLink2 = "https://www.nerdwallet.com/article/investing/cryptocurrency-7-things-to-know";
-									// 									setUserLink3 = "https://www.investopedia.com/teach-others-about-finances-5217599";
-									// setUserText1 = "What is microlending and how does it work?";
-									// setUserText2 = "7 things to know about cryptocurrency";
-									// setUserText3 = "Teach others about their finances";
-									// 					}
+														else if ((expensesTtl > (incomeTtl && assetsTtl && debtsTtl)) || (theRed > theBlack)) {
+																		setUserAdvice = "Your expenses are high; consider the 50-30-20 rule, and reduce non-essential spending. Are you interested in financial literacy or other ways to handle costs?";
+																		setUserLink1 = "https://www.clevergirlfinance.com/blog/ways-to-stop-buying-crap-you-dont-need/";
+																		setUserLink2 = "https://www.khanacademy.org/college-careers-more/personal-finance/pf-saving-and-budgeting/tips-for-tracking-and-saving-money/v/ways-to-save-money-on-your-monthly-bills";
+																		setUserLink3 = "https://www.khanacademy.org/college-careers-more/personal-finance/pf-saving-and-budgeting";
+									setUserText1 = "Ways to avoid unneeded purchases";
+									setUserText2 = "Reducing your monthly bills";
+									setUserText3 = "Personal finance, saving, and budgeting";
+														} else if (debtsTtl > (incomeTtl && assetsTtl && expensesTtl) && (theRed > theBlack)) {
+																		setUserAdvice = "You have some debt issues; prioritize paying the most significant debts first. Do you have any assets you could liquidate or are you in need of debt relief?";
+																		setUserLink1 = "https://www.aarp.org/money/credit-loans-debt/info-08-2011/negotiating-credit-card-companies.html";
+																		setUserLink2 = "https://consumer.westchestergov.com/financial-education/credit-and-debt-management/tips-to-reduce-your-debt";
+																		setUserLink3 = "https://www.investopedia.com/personal-finance/digging-out-of-debt/";
+									setUserText1 = "How to negotiate with credit companies";
+									setUserText2 = "Tips on reducing what you owe";
+									setUserText3 = "Dig your way out of debts";
+														} else { 
+																		setUserAdvice = "Your finances are perfectly balanced! (Seriously, though, what's with that?)";
+																		setUserLink1 = "https://www.investopedia.com/articles/personal-finance/040715/what-microlending-and-how-does-it-work.asp";
+																		setUserLink2 = "https://www.nerdwallet.com/article/investing/cryptocurrency-7-things-to-know";
+																		setUserLink3 = "https://www.investopedia.com/teach-others-about-finances-5217599";
+									setUserText1 = "What is microlending and how does it work?";
+									setUserText2 = "7 things to know about cryptocurrency";
+									setUserText3 = "Teach others about their finances";
+														}
 				}
 
     finBreakdown();
