@@ -4,6 +4,8 @@ import Debt from './Debt';
 import Income from './Income';
 import Expenses from './Expenses';
 import Donut from './Donut';
+import Breakdown from './Breakdown';
+import Results from './Results';
 
 function Form() {
     
@@ -119,9 +121,9 @@ function Form() {
         <Expenses expValues={expValues} handleExpChange={handleExpChange} removeExpFields={removeExpFields} addExpFields={addExpFields}/>
         <Debt debtValues={debtValues} handleDebtChange={handleDebtChange} removeDebtFields={removeDebtFields} addDebtFields={addDebtFields}/>
         <button className='submit' onClick={handleSubmit}>Generate Results</button>
-        <Donut assetAmount={assetAmount} incAmount={incAmount} expAmount={expAmount} debtAmount={debtAmount}
-        
-        assetValues={assetValues} incValues={incValues} expValues={expValues} debtValues={debtValues}/>
+        <Donut assetValues={assetValues} incValues={incValues} expValues={expValues} debtValues={debtValues}/>
+        {/* <Breakdown assetValues={assetValues} incValues={incValues} expValues={expValues} debtValues={debtValues}/>  */}
+        <Results assetValues={assetValues} incValues={incValues} expValues={expValues} debtValues={debtValues}/> 
         </>
 
     );

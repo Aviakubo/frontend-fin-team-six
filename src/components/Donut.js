@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Sector, ResponsiveContainer } from "recharts";
 
-export default function App({assetAmount, incAmount, expAmount, debtAmount, assetValues, incValues, expValues, debtValues}) {
+export default function App({assetValues, incValues, expValues, debtValues}) {
   // console.log({assetAmount})
-  console.log({assetValues})
+  // console.log({assetValues})
 
   let totalAssetAmount = 0;
   let totalIncAmount = 0;
