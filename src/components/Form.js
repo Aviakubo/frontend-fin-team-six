@@ -111,7 +111,7 @@ function Form() {
           totalAmount -= Number(debtValues[i].name)
           debtAmount -= Number(debtValues[i].name)
         }
-      alert(totalAmount)
+      // alert(totalAmount)
     }
 
     return (
