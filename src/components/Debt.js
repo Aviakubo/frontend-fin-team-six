@@ -19,17 +19,9 @@ function Debt() {
         setFormValues(newFormValues)
     }
     
-    let handleSubmit = (event) => {
-        event.preventDefault();
-        alert('working'+ JSON.stringify(formValues))
-        // alert('working'+ formValues)
-        // alert(formValues)
-
-    }
-
     return (
         
-        <form  onSubmit={handleSubmit}>
+        <form className='formSteps'>
             Debts
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>

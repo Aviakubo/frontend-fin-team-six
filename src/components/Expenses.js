@@ -19,18 +19,10 @@ function Expenses() {
         newFormValues.splice(i, 1);
         setFormValues(newFormValues)
     }
-    
-    let handleSubmit = (event) => {
-        event.preventDefault();
-        alert('working'+ JSON.stringify(formValues))
-        // alert('working'+ formValues)
-        // alert(formValues)
-
-    }
 
     return (
         
-        <form  onSubmit={handleSubmit}>
+        <form className='formSteps'>
             Expense
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>

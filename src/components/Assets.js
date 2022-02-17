@@ -4,7 +4,7 @@ function Assets({assetValues, handleAssetChange, removeAssetFields, addAssetFiel
   console.log(assetValues)
     return (
         
-        <form>
+        <form className='formSteps'>
             Assets
           {assetValues.map((element, index) => (
             <div className="form-inline" key={index}>
