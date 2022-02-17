@@ -65,6 +65,7 @@ input {
   width: 45%;
   height: 2.5em;
   background-color: #FFFFFF;
+  margin: 7.5px;
 }
 
 .formSteps {
