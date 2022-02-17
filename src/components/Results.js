@@ -34,22 +34,25 @@ function Results(){
                 <div className='results'>
                     <h1 className='final-category'>You have outstanding assets</h1>
                     <h2 className='advice'> Here are some resources!</h2>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                </div>
+                    <ul>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    </ul>
+                </div>      
             )
         } else if(incomeTtl > assetsTtl + expensesTtl + debtsTtl) {
             return (
                 <div className='results'>
                     <h1 className='final-category'>You have outstanding income</h1>
                     <h2 className='advice'> Here are some resources!</h2>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>   
-                    <h3 className='resources'> Resource </h3>
-
+                    <ul>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>   
+                    <li className='resources'> Resource </li>
+                    </ul>
                 </div>
             )
         } else if (expensesTtl > incomeTtl + assetsTtl + debtsTtl){
@@ -57,11 +60,13 @@ function Results(){
                 <div className='results'>
                     <h1 className='final-category'>You have outstanding expenses</h1>
                     <h2 className='advice'> Here are some resources!</h2>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                </div>
+                    <ul>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    </ul>
+                </div>      
             )
         // } else if (debtsTtl < incomeTtl + expensesTtl + assetsTtl){
         } else {
@@ -69,11 +74,13 @@ function Results(){
                 <div className='results'>
                     <h1 className='final-category'>You have outstanding debts</h1>
                     <h2 className='advice'> Here are some resources!</h2>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
-                </div>
+                    <ul>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    <li className='resources'> Resource </li>
+                    </ul>
+                </div>      
             )
         }
     }

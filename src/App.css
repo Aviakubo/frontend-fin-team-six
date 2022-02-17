@@ -122,11 +122,11 @@ div.results {
   background-color: #FFFFFF;
   padding: 5px;
   max-width: 75%;
-
 }
 
 .final-category {
   background-color: #FFFFFF;
+  color: #1E1363;
 }
 
 .advice {
@@ -137,6 +137,10 @@ div.results {
   background-color: #FFFFFF;
 }
 
+ul {
+  list-style-position: inside;
+  background-color: #FFFFFF;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
