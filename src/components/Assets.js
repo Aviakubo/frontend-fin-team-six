@@ -5,7 +5,7 @@ function Assets({assetValues, handleAssetChange, removeAssetFields, addAssetFiel
     return (
         
         <form className='formSteps'>
-            Assets
+            <span className="steps">Step 1 |</span> Assets
           {assetValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>

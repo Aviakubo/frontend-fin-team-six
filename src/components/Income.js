@@ -5,7 +5,7 @@ function Income({incValues, handleIncChange, removeIncFields, addIncFields}) {
     return (
         
         <form className='formSteps'>
-            Income
+            <span className="steps">Step 2 |</span> Income
           {incValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>

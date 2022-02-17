@@ -31,7 +31,7 @@ function Expenses() {
     return (
       
         <form className="formSteps" onSubmit={handleSubmit}>
-            <span className="steps">Step 2 |</span> Expense
+            <span className="steps">Step 3 |</span> Expense
           {formValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
