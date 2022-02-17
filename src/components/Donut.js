@@ -92,13 +92,13 @@ export default function App() {
     <PieChart style={{
       position: 'relative', left: '50%', top: '50%',
       transform: 'translate(-50%)'
-    }} width={400} height={400}>
+    }} width={500} height={500}>
       <Pie
         activeIndex={activeIndex}
         activeShape={renderActiveShape}
         data={data}
-        cx={200}
-        cy={200}
+        cx={250}
+        cy={250}
         innerRadius={110}
         outerRadius={145}
         fill="#8884d8"
