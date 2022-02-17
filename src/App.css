@@ -21,6 +21,7 @@ body {
 .steps {
   font-weight:bold;
   color:#1E1363;
+  background-color: #FFFFFF;
 }
 
 button.submit {
@@ -96,6 +97,10 @@ input {
 .logo {
   max-width: 35%;
   margin: 2em;
+}
+
+label {
+  background-color: #FFFFFF;
 }
 
 /* Chrome, Safari, Edge, Opera */
