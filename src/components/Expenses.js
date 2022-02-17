@@ -5,7 +5,7 @@ function Expenses({expValues, handleExpChange, removeExpFields, addExpFields}) {
     return (
         
         <form className='formSteps'>
-            Expense
+            <span className="steps">Step 3 |</span> Expense
           {expValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
@@ -18,7 +18,7 @@ function Expenses({expValues, handleExpChange, removeExpFields, addExpFields}) {
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addExpFields()}>⊕ Add Expenses</button>
+              <button className="button add" type="button" onClick={() => addExpFields()}>Add</button>
           </div>
       </form>
 

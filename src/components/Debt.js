@@ -5,7 +5,7 @@ function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
     return (
         
         <form className='formSteps'>
-            Debts
+            <span className="steps">Step 4 |</span> Debts
           {debtValues.map((element, index) => (
             <div className="form-inline" key={index}>
               <label>$</label>
@@ -18,7 +18,7 @@ function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addDebtFields()}>⊕ Add Debts</button>
+              <button className="button add" type="button" onClick={() => addDebtFields()}>Add</button>
           </div>
       </form>
     );

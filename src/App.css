@@ -77,3 +77,38 @@ input {
   margin: 5px 5px 15px 5px;
   background-color: #FFFFFF;
 }
+
+.form-inline {
+  background-color: #FFFFFF;
+}
+
+.button-section {
+  background-color: #FFFFFF;
+}
+
+.logo {
+  max-width: 400px;
+  margin: 2em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media screen and (min-width: 650px) {
+
+  .formSteps{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+  }
+  
+}
