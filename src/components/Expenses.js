@@ -18,7 +18,7 @@ function Expenses({expValues, handleExpChange, removeExpFields, addExpFields}) {
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addExpFields()}>⊕ Add Expenses</button>
+              <button className="button add" type="button" onClick={() => addExpFields()}>Add</button>
           </div>
       </form>
 

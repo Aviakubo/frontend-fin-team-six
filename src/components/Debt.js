@@ -18,7 +18,7 @@ function Debt({debtValues, handleDebtChange, removeDebtFields, addDebtFields}) {
             </div>
           ))}
           <div className="button-section">
-              <button className="button add" type="button" onClick={() => addDebtFields()}>⊕ Add Debts</button>
+              <button className="button add" type="button" onClick={() => addDebtFields()}>Add</button>
           </div>
       </form>
     );
