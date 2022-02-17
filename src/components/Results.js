@@ -84,8 +84,7 @@ function Results({assetValues, incValues, expValues, debtValues}){
                     <a href="https://www.khanacademy.org/college-careers-more/personal-finance/pf-saving-and-budgeting" target="#" >"Personal finance, saving, and budgeting"</a>
                 </div>
             )
-        // } else if (debtsTtl < incomeTtl + expensesTtl + assetsTtl){
-        } else {
+        } else if (debtsTtl < incomeTtl + expensesTtl + assetsTtl){
             return (
                 <div className='results'>
                     <h1 className='final-category'>You have outstanding debts</h1>
@@ -98,6 +97,8 @@ function Results({assetValues, incValues, expValues, debtValues}){
                     <a href="https://www.investopedia.com/personal-finance/digging-out-of-debt/" target="#" >"Dig your way out of debts"</a>
                 </div>
             )
+        } else {
+          return 
         }
     }
 	
@@ -107,12 +108,6 @@ function Results({assetValues, incValues, expValues, debtValues}){
     return(
         <>
             {finResults()}
-            {/* {userMsg}
-            {userNetWorth}
-            {userAdvice}
-            <Link name="userLink1" to='google.com'>Google</Link>
-            <Link name="userLink2" to='google.com'>Google</Link>
-            <Link name="userLink3" to='google.com'>Google</Link>								 */}
         </>
     )
 
