@@ -20,8 +20,8 @@ function Results(){
 	// VARIABLES
     let incomeTtl = 10;
     let assetsTtl = 20000;
-    let expensesTtl = 300;
-    let debtsTtl = 40000000;
+    let expensesTtl = 100;
+    let debtsTtl = 1000;
     let netWorth = incomeTtl + assetsTtl - expensesTtl - debtsTtl;
     let theBlack = incomeTtl + assetsTtl;
     let theRed = expensesTtl + debtsTtl; 
@@ -47,7 +47,7 @@ function Results(){
                     <h2 className='advice'> Here are some resources!</h2>
                     <h3 className='resources'> Resource </h3>
                     <h3 className='resources'> Resource </h3>
-                    <h3 className='resources'> Resource </h3>
+                    <h3 className='resources'> Resource </h3>   
                     <h3 className='resources'> Resource </h3>
 
                 </div>

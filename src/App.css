@@ -116,10 +116,13 @@ svg {
 div.results {
   border-radius: 8px;
   border: 2px #C8E2ED solid;
-  margin: 5em;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 5em;
   background-color: #FFFFFF;
   padding: 5px;
   max-width: 75%;
+
 }
 
 .final-category {
